@@ -1,0 +1,171 @@
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Top Navbar */
+.top-nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.top-nav ul li {
+    display: inline;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.top-nav ul li a:hover {
+    background-color: #3498db;
+    border-radius: 5px;
+}
+
+/* Content Sections */
+.content-container {
+    margin: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #3498db;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #e74c3c;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Content Section Styles */
+.content-section {
+    display: none; /* Initially hide all sections */
+}
+
+.content-section.active {
+    display: block; /* Show the active section */
+}
+
+/* About, Skills, Portfolio, Contact Sections */
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill {
+    background-color: #3498db;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.skill h3 {
+    font-size: 20px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .skills .skill-list {
+        flex-direction: column;
+    }
+
+    .portfolio-items {
+        flex-direction: column;
+    }
+}
